@@ -1,9 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Switzer:wght@100..900&display=swap');
+
 *{
     margin: 0;
     padding: 0;
 }
 body{
-    font-family: 'Courier New', Courier, monospace;
+    font-family: 'Switzer', sans-serif;
 }
 .header{
     display: flex;
@@ -84,3 +86,130 @@ body{
     width: 60px;
     height: 40px;
 }
+.body{
+    display: grid;
+    grid-template-columns: 0.7fr 3fr 1fr;
+    border: 1px solid black;
+}
+.body .left-side-bar{
+    border: 1px solid black;
+    
+}
+.body .main-body-bar{
+    border: 1px solid black;
+    
+}
+.body .right-side-bar{
+    border: 1px solid black;
+   
+}
+.left-side-head{
+    margin: 10px;
+    padding: 10px;
+    
+
+}
+.left-side-head span:nth-child(2){
+    background-color: rgb(184, 252, 190);
+    padding: 0 4px;
+    border-radius:5px;
+    margin: 15px 0;
+    color: rgb(31, 87, 0);
+    font-size: 14px;
+    
+    
+}
+.left-side-head p:nth-child(1){
+    margin-bottom: 2px;
+    font-weight: bold;
+}
+.border{
+    border: 1px solid #ddd;
+}
+.home a{
+    display: flex;
+    background-color: rgba(137, 203, 253, 0.4);
+    padding: 10px;
+    border-radius: 8px;
+    margin: 10px;
+    text-decoration: none;
+}
+.home img:nth-child(1){ 
+    width: 20px;
+    height: 20px;
+    padding-left: 30px;
+}
+.home p:nth-child(2){
+    padding-left: 20px;
+    color: blue;
+}
+.home a:hover{
+    background-color: #ddd;
+
+}
+.subjects{
+    margin:10px;
+    
+}
+.subjects p{
+    font-size: 12px;
+    padding: 10px;
+    padding-left: 20px;
+}
+.subjects ul{
+    border: 1px solid #ddd;
+    border-radius: 15px;
+    list-style-type: none;
+    padding: 10px;
+    margin: 2px;
+    
+}
+.subjects a{
+    text-decoration: none;
+    color: black;
+    font-size: 14px;
+}
+.subjects li{
+    padding:10px 15px
+}
+.subjects li:hover{
+    background-color:#ddd;
+    border-radius:10px ;
+
+
+}
+.left-features{
+    margin: 10px;
+    padding: 10px;
+    text-decoration: none;
+    color: black;
+}
+.left-features a{
+    text-decoration: none;
+    color: black;
+    text-align: left;
+    font-size: 14px;
+
+}
+.left-features:hover{
+    background-color: #ddd;
+    border-radius: 8px;
+
+}
+.left-features-concern {
+    background-color: rgba(128, 255, 121, 0.5);
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px;
+}
+.left-features-concern a{
+    text-decoration:none ;
+    color: rgb(0, 145, 12);
+    text-align: left;
+    font-size: 14px;
+  
+}
+.left-features-concern:hover{
+    background-color: #ddd;
+}
+
