@@ -1,8 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Switzer:wght@100..900&display=swap');
+@import url('https://fonts.google.com/selection?preview.text=all%20your%20task%20are%20competed&query=mona+san&icon.size=24&icon.color=%23000000&icon.set=Material+Icons&icon.style=Filled');
 
 *{
     margin: 0;
     padding: 0;
+    line-height: 1.6;
 }
 body{
     font-family: 'Switzer', sans-serif;
@@ -24,9 +26,15 @@ body{
     margin: 0 2px 6px 2px;
 
 }
-.courses img{
+.courses img:nth-child(1){
     
     height: 25px;
+    margin-right: 10px;
+    padding-left: 10px;
+}
+.courses img:nth-child(3){
+    
+    height: 15px;
     margin-right: 10px;
     padding-left: 10px;
 }
@@ -175,9 +183,15 @@ body{
 .subjects li:hover{
     background-color:#ddd;
     border-radius:10px ;
-
-
 }
+.subjects li:hover .hover{
+    height: 15px;
+    width: 15px;
+    display: inline-block;
+    transform: translateX(30px);
+    position: 20px;
+}
+
 .left-features{
     margin: 10px;
     padding: 10px;
@@ -212,4 +226,154 @@ body{
 .left-features-concern:hover{
     background-color: #ddd;
 }
+.upper-assignment-bar{
+    margin: 38px;
+    
+}
+.first-block{
+    display: flex;
+    margin: 30px;
+}
+.first-block-image{
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    width: 30px;
+    height: 30px;
+}
+.first-block-image img{
+    margin: 3px;
+}
+.first-block-para{
+    padding:1px;
+    margin-left: 10px;
+    padding-right: 500px;
+}
+.first-block-para p:nth-child(1){
+    font-size: 13px;
+    font-weight: bold;
+}
+.first-block-para p:nth-child(2){
+    font-size: 11px;
+    padding-top: 4px;
+    color: #484848;
+}
+.lastarrow-image{
+    display: flex;
+}
+.lastarrow-image img{
+    
+    width: 25px;
+    height: 25px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    margin: 3px;
+}
+.lastarrow-image div:nth-child(1){
+    padding-left: 50px;
+}
+.lastarrow-image img:hover{
+    background-color:rgba(118, 118, 118, 0.1);
+    cursor: pointer;
+}
+.assignmentimage img{
+    width: 180px;
+    height: 150px;
+    padding: 20px 0px 10px 90px;
 
+
+}
+.assignmentimage p:nth-child(2){
+    font-weight: 600;
+    font-size: 16px;
+    padding: 20px;
+    padding-left: 100px;
+
+}
+.assignmentimage p:nth-child(3){
+    padding-bottom: 15px;
+    font-size: 10px;
+    color: #585858;
+    padding-left: 180px;
+
+
+}
+.practice{
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    margin-left: 90px;
+    margin-right: 715px;
+}
+.assignmentimage .practice p{
+    color: #4c4c4c;
+    padding: 8px;
+    margin-left: 6px;
+    font-size: 12px;
+    font-weight: 600;
+    cursor: pointer;
+
+    
+}
+.border-main-first{
+    margin-top: 35px;
+    border: 1px solid #ddd;
+}
+.your-performance{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    justify-content: center;
+    align-content: center;
+    gap:10px
+}
+.lecture{
+    display: flex;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    margin: 10px;
+}
+.perfro h5{
+    margin: 20px;
+}
+.para-para{
+    display:flex;
+}
+.sub-calender{
+    margin: 20px;
+}
+.calen{
+    display: flex;
+    justify-content: space-between;
+}
+.image-calender{
+    display: flex;
+    background-color:rgba(44, 44, 44, 0.2);
+    border-radius: 8px;
+    padding: 2px 10px;
+}
+.image-calender p:nth-child(1){
+    padding-right: 8px;
+    color: #565656;
+    font-size: 12.5px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.image-calender img:nth-child(2){
+    margin: 2px;
+    cursor: pointer;
+}
+.calender-p{
+    color: #383838;
+    font-size: 13px;
+    padding-top: 2px;
+    
+}
+.calendar-image-box{
+    margin: 50px;
+}
+.imagenew{
+    margin: 50px;
+}
+.calendar-image-box p{
+    text-align: center;
+    padding-left: 10px;
+}
