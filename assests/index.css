@@ -20,7 +20,7 @@ body{
     display:flex;
     height: 40px;
     align-items: center;
-    box-shadow:1px 2px 2px 2px  #ddd;
+    box-shadow:0 2px 4px#ddd;
     border: 1px solid #ddd;
     width: fit-content;
     border-radius: 10px;
@@ -91,7 +91,8 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    gap:3px
+    gap:3px;
+    
 }
 .profile-menu img{
     height: 30px;
@@ -105,18 +106,25 @@ body{
 .body{
     display: grid;
     grid-template-columns: 0.7fr 3fr 1fr;
-    border: 1px solid black;
+    
+    
 }
 .body .left-side-bar{
-    border: 1px solid black;
+    overflow-y: auto;
+    height: 100vh;
     
 }
 .body .main-body-bar{
-    border: 1px solid black;
+    border-left: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+    overflow-y: auto;
+    height: 100vh;
+
     
 }
 .body .right-side-bar{
-    border: 1px solid black;
+    overflow-y: auto;
+    height: 100vh;
    
 }
 .left-side-head{
@@ -333,18 +341,8 @@ body{
     align-content: center;
     gap:10px
 }
-.lecture{
-    display: flex;
-    border: 1px solid #ddd;
-    border-radius: 10px;
-    margin: 10px;
-}
-.perfro h5{
-    margin: 20px;
-}
-.para-para{
-    display:flex;
-}
+
+
 .sub-calender{
     margin: 20px;
 }
@@ -388,3 +386,60 @@ body{
     color: #919191;margin-top: -20px;
 
 }
+.perform{
+    padding: 20px;
+}
+.perform-topics{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 20px;
+}
+.lecture{
+    display: flex;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    cursor: pointer;
+}
+.perform-name-progress{
+    display: flex;
+}
+.lectureimage{
+    border: 1px solid #eeeeee;
+    padding: 10px;
+    border-radius: 10px;
+    width: 25px;
+    height: 25px;
+    
+    
+}
+
+.perform-heading{
+    padding: 20px;
+    
+}
+.perform-heading h5{
+    font-size: 16px;
+    transform: scaleX(1.1);
+    padding:0 40px;
+    color: rgb(61, 52, 52);
+}
+.perform-name{
+    padding-left: 13px;
+    padding-right: 200px;
+}
+.perform-name-progress p:nth-child(1){
+    font-weight: bold;
+    font-size: 18px;
+    padding-right: 3px;
+    /* font-spacing add on */
+    transform: scaleX(1.1);
+}
+.perform-name >p{
+    color: #4e4e4e;
+}
+.lecture:hover{
+    box-shadow: 0 2px 4px #ddd;
+}
+
